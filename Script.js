@@ -1,4 +1,3 @@
-// NAVBAR
 const menuBtn = document.getElementById("menu-btn");
 const navLinks = document.getElementById("nav-links");
 const menuBtnIcon = menuBtn.querySelector("i");
@@ -151,4 +150,5 @@ bookBtns.forEach(btn => {
 joinBtn.addEventListener('click', () => animateOpen(joinModal));
 
 closeBooking.addEventListener('click', () => animateClose(bookingModal));
+
 closeJoin.addEventListener('click', () => animateClose(joinModal));
