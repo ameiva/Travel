@@ -149,7 +149,7 @@ nav {
 /* HEADER */
 .header {
   padding-block: 5rem;
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("assets/header.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("header.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -284,7 +284,7 @@ nav {
 
 /* DISCOUNT SECTION */
 .discount {
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("assets/discount.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("discount.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -649,7 +649,7 @@ nav {
 }
 /* default (mobile) */
 .nav__menu__btn { display: block; }  
-.nav__links { flex-direction: column; transform: translateY(-200%); } /* hidden by default */
+.nav__links { flex-direction: column; transform: translateY(-200%); } 
 
 /* desktop */
 @media (min-width: 768px) {
@@ -665,3 +665,4 @@ nav {
   }
 
 }
+
