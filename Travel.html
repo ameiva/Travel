@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="Independence-day.css" />
+    <title>TravelRein</title>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#" class="logo">Travel<span>Rein</span></a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#service">Services</a></li>
+        <li><a href="#destination">Destinations</a></li>
+        <li><a href="#package">Packages</a></li>
+        <li><a href="#client">Clients</a></li>
+      </ul>
+    </nav>
+
+    <!-- HEADER -->
+    <header class="header" id="home">
+      <div class="section__container header__container">
+        <h1>TRAVELLER<br /><span>FOR LIFE.</span></h1>
+        <p>Live your best moments</p>
+
+        <form id="searchForm">
+          <div class="input__group">
+            <span><i class="ri-map-2-fill"></i></span>
+            <input type="text" id="destinationInput" placeholder="Where are you going?" />
+          </div>
+
+          <div class="input__group">
+            <span><i class="ri-map-pin-2-fill"></i></span>
+            <input type="text" id="locationInput" placeholder="Location" />
+          </div>
+
+          <div class="input__group">
+            <span><i class="ri-list-ordered-2"></i></span>
+            <input type="text" id="tourTypeInput" placeholder="Tour type" />
+          </div>
+
+          <div class="input__group">
+            <button class="btn" type="submit">Search</button>
+          </div>
+        </form>
+      </div>
+    </header>
+
+    <!-- FEATURES -->
+    <section class="section__container feature__container" id="service">
+      <div class="feature__card">
+        <img src="assets/feature-1.png" alt="feature" />
+        <div>
+          <h4>Best Destinations</h4>
+          <p>Discover the most breathtaking places around the globe.</p>
+        </div>
+      </div>
+      <div class="feature__card">
+        <img src="assets/feature-2.png" alt="feature" />
+        <div>
+          <h4>Best Price Guaranteed</h4>
+          <p>Enjoy unbeatable prices on every trip you book.</p>
+        </div>
+      </div>
+      <div class="feature__card">
+        <img src="assets/feature-3.png" alt="feature" />
+        <div>
+          <h4>Instant Booking</h4>
+          <p>Secure your dream vacation with just a click.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESTINATIONS -->
+    <section class="destination" id="destination">
+      <div class="section__container destination__container">
+        <h2 class="section__header">Top Destinations</h2>
+        <p class="section__description">Find out what are the best destinations in the world</p>
+
+        <div class="destination__grid">
+          <div class="destination__card">
+            <img src="assets/Bhutan.jpg" alt="destination" />
+            <div class="destination__content">Bhutan</div>
+          </div>
+          <div class="destination__card">
+            <img src="assets/Komodo Island.jpg" alt="destination" />
+            <div class="destination__content">Komodo Island</div>
+          </div>
+          <div class="destination__card">
+            <img src="assets/Bali.jpg" alt="destination" />
+            <div class="destination__content">Tanah Lot</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DISCOUNT -->
+    <section class="discount">
+      <div class="section__container discount__container">
+        <h2>Get upto 60% discount<br /><span>by joining us before summer</span></h2>
+        <div class="discount__btn">
+          <button class="btn" id="joinBtn">Join Us</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- PACKAGES -->
+    <section class="section__container package__container" id="package">
+      <h2 class="section__header">Featured Packages</h2>
+      <p class="section__description">We will help you find the trip that's perfect for you!</p>
+
+      <div class="package__grid">
+        <div class="package__card">
+          <img src="assets/package-1.jpg" alt="package" />
+          <div class="package__card__details">
+            <h4>Thailand City Tour</h4>
+            <p>Explore the vibrant culture and stunning landscapes of Thailand.</p>
+            <div>
+              <button class="btn bookBtn">Book Now</button>
+              <h3>$130</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="package__card">
+          <img src="assets/package-2.jpg" alt="package" />
+          <div class="package__card__details">
+            <h4>Laos City Tour</h4>
+            <p>Immerse yourself in the rich culture and landscapes of Laos.</p>
+            <div>
+              <button class="btn bookBtn">Book Now</button>
+              <h3>$150</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="package__card">
+          <img src="assets/package-3.jpg" alt="package" />
+          <div class="package__card__details">
+            <h4>Singapore City Tour</h4>
+            <p>Experience the vibrant blend of culture and architecture.</p>
+            <div>
+              <button class="btn bookBtn">Book Now</button>
+              <h3>$110</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLIENTS -->
+    <section class="section__container client__container" id="client">
+      <h2 class="section__header">Client Reviews</h2>
+      <p class="section__description">We have many happy customers who booked holidays with us</p>
+
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="client__card"><img src="assets/client-1.jpg" /><span><i class="ri-double-quotes-l"></i></span><p>The instant booking feature is amazing.</p><h4>Michael Lee</h4><h5>Software Engineer</h5></div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card"><img src="assets/client-2.jpg" /><span><i class="ri-double-quotes-l"></i></span><p>Best price guarantee really works!</p><h4>Sarah Johnson</h4><h5>Marketing Manager</h5></div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card"><img src="assets/client-3.jpg" /><span><i class="ri-double-quotes-l"></i></span><p>Great customer service.</p><h4>David Martinez</h4><h5>Financial Analyst</h5></div>
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+
+    <!-- SUBSCRIBE -->
+    <section class="subscribe">
+      <div class="section__container subscribe__container">
+        <h2>Subscribe to our newsletter</h2>
+        <div>
+          <p>Get the best recommendations and updates from us.</p>
+
+          <form id="subscribeForm">
+            <input type="text" id="emailInput" placeholder="Enter your email" />
+            <button class="btn">SUBSCRIBE</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="footer__logo"><a href="#" class="logo">Travel<span>Rein</span></a></div>
+          <p>Explore the world's best destinations.</p>
+
+          <h4>CONNECT WITH US</h4>
+          <ul class="footer__socials">
+            <li><a href="https://twitter.com" target="_blank"><i class="ri-twitter-fill"></i></a></li>
+            <li><a href="https://google.com" target="_blank"><i class="ri-google-fill"></i></a></li>
+            <li><a href="https://linkedin.com" target="_blank"><i class="ri-linkedin-fill"></i></a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>QUICK LINKS</h4>
+          <ul class="footer__links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>DESTINATIONS</h4>
+          <ul class="footer__links">
+            <li><a href="#">China</a></li>
+            <li><a href="#">Australia</a></li>
+            <li><a href="#">Brazil</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>OUR ACTIVITIES</h4>
+          <ul class="footer__links">
+            <li><a href="#">Trekking</a></li>
+            <li><a href="#">Biking</a></li>
+            <li><a href="#">Cultural Tour</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bar">Copyright © 2025 Revania. All rights reserved.</div>
+    </footer>
+
+    <!-- MODAL BOOKING -->
+    <div class="modal" id="bookingModal">
+      <div class="modal-content">
+        <span class="closeBtn">&times;</span>
+        <h2>Booking Form</h2>
+        <form id="bookingForm">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Email Address" required />
+          <input type="date" required />
+          <button class="btn" type="submit">Submit Booking</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- MODAL JOIN US -->
+    <div class="modal" id="joinModal">
+      <div class="modal-content">
+        <span class="closeJoin">&times;</span>
+        <h2>Join Us</h2>
+        <form id="joinForm">
+          <input type="text" placeholder="Full Name" required />
+          <input type="email" placeholder="Email Address" required />
+          <button class="btn" type="submit">Join Now</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="Independence-day.js"></script>
+  </body>
+</html>
