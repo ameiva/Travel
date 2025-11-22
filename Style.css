@@ -1,25 +1,17 @@
-/* =====================
-   IMPORT FONTS
-===================== */
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-/* =====================
-   COLOR PALETTE (ELEGANT)
-===================== */
 :root {
-  --primary-color: #b08d57;           /* Gold-Brown Elegant */
-  --primary-color-dark: #8b6c3c;      /* Darker Gold */
+  --primary-color: #b08d57;           
+  --primary-color-dark: #8b6c3c;      
   --text-dark: #1f1e1b;
   --text-light: #6e6c68;
-  --extra-light: #f3efe8;             /* Warm Beige */
+  --extra-light: #f3efe8;             /
   --white: #ffffff;
   --max-width: 1200px;
   --header-font: "Merriweather", serif;
 }
 
-/* =====================
-   GENERAL STYLES
-===================== */
+/* GENERAL STYLES */
 * {
   padding: 0;
   margin: 0;
@@ -94,15 +86,13 @@ body {
   background-color: var(--extra-light);
 }
 
-/* =====================
-   NAVBAR
-===================== */
+/* NAVBAR */
 nav {
   position: fixed;
   width: 100%;
   max-width: var(--max-width);
   margin-inline: auto;
-  z-index: 9999; /* supaya paling atas */
+  z-index: 9999; 
 }
 
 .nav__header {
@@ -139,7 +129,7 @@ nav {
 
 .nav__links.open {
   transform: translateY(0);
-  pointer-events: auto; /* FIX: bisa diklik saat terbuka */
+  pointer-events: auto; 
 }
 
 .nav__links a {
@@ -152,14 +142,11 @@ nav {
   color: var(--primary-color);
 }
 
-/* Scroll margin top for anchor targets to avoid hidden behind fixed navbar */
 #home, #service, #destination, #package, #client {
-  scroll-margin-top: 80px; /* Sesuaikan dengan tinggi navbar dan spacing */
+  scroll-margin-top: 80px;
 }
 
-/* =====================
-   HEADER
-===================== */
+/* HEADER */
 .header {
   padding-block: 5rem;
   background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("assets/header.jpg");
@@ -216,9 +203,7 @@ nav {
   width: 100%;
 }
 
-/* =====================
-   FEATURE SECTION
-===================== */
+/* FEATURE SECTION */
 .feature__container {
   display: grid;
   gap: 2rem;
@@ -250,9 +235,7 @@ nav {
   line-height: 1.5rem;
 }
 
-/* =====================
-   DESTINATION
-===================== */
+/* DESTINATION */
 .destination {
   position: relative;
   overflow: hidden;
@@ -299,9 +282,7 @@ nav {
   opacity: 1;
 }
 
-/* =====================
-   DISCOUNT SECTION
-===================== */
+/* DISCOUNT SECTION */
 .discount {
   background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("assets/discount.jpg");
   background-size: cover;
@@ -323,9 +304,7 @@ nav {
   font-size: 2rem;
 }
 
-/* =====================
-   PACKAGE CARDS
-===================== */
+/* PACKAGE CARDS */
 .package__grid {
   margin-top: 4rem;
   display: grid;
@@ -684,4 +663,5 @@ nav {
     border: none; 
     pointer-events: auto;
   }
+
 }
